@@ -1,0 +1,45 @@
+.dashboard .quiz{
+ position: relative;
+ height: 100%
+}
+
+.dashboard .quiz .top{
+  position: relative;
+ display: flex;
+ justify-content: center;
+ top: 50px;
+}
+
+.dashboard .quiz .question-area{
+   font-size: 30px;
+}
+
+.dashboard .quiz .question-area .options{
+   margin: 40px;
+}
+.dashboard .quiz .question-area .options .option{
+   display: block;
+}
+
+.dashboard .quiz .answer-list .list{
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.dashboard .quiz .answer-list .list .answer-tabs{
+  padding: 15px 35px;
+ border: 1px solid #ffffff;
+ cursor: pointer;
+}
+
+.dashboard .quiz .answer-list .list .answer-tabs:active{
+  background-color: red;
+}
+
+
+.dashboard .quiz .answer-list .list .answer-tabs:not(:nth-child(1)){
+  margin-left: 10px;
+}

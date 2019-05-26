@@ -1,0 +1,45 @@
+.report {
+  height: inherit;
+    overflow-y: auto;
+  }
+
+.report .header{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  }
+
+.report .questionlist{
+  display: flex;
+flex-direction: column;
+position: relative;
+left: 50%;
+margin-left: -135px;
+
+}
+
+.report .questionlist .options .option.green{
+
+   color: green;
+
+}
+
+.report .questionlist .options .option.red{
+
+   color: red;
+
+}
+
+.report .questionlist .question-area .options{
+    display: flex;
+    flex-direction: column;
+  }
+
+.report .questionlist .question-area{
+  margin-top: 30px;
+  font-size: 30px;
+
+}
