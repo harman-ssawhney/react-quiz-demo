@@ -21,7 +21,7 @@ class Dashboard extends Component{
   }
 
   componentDidMount(){
-     // api call to fetch data 
+     // api call to fetch data
      FetchRates().then(res=>{
        this.setState({
          questionsList : res.data,
@@ -69,6 +69,9 @@ class Dashboard extends Component{
       if(!this.state.showReport){
     return (
       <div className="dashboard">
+      <div className="count-header">
+        <header> Quiz {(this.state.questionIndex+1)} of {this.state.questionsList.length}</header>
+        </div>
         <Quiz question={this.state.questionsList[this.state.questionIndex]} next={this.next} selected={this.storeAnswers}/>
       </div>
     )
